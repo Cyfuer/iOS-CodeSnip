@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "03b5a7f0-57b0-11e6-a4aa-f5feaf0a2b9e++610",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "03b5a7f0-57b0-11e6-a4aa-f5feaf0a2b9e++610" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03b5a7f0-57b0-11e6-a4aa-f5feaf0a2b9e++610" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AEC1D94A-4096-471C-B24C-A100A67A671D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03b5a7f0-57b0-11e6-a4aa-f5feaf0a2b9e++610" : "UIKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UIKit-set",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UIKit-set\/UIKit-set.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.5.251\/svn\/iflashbuy-core",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03b5a7f0-57b0-11e6-a4aa-f5feaf0a2b9e++610"
+    }
+  ]
+}
