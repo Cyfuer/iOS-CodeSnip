@@ -11,6 +11,7 @@
 #import "UIButtonVC.h"
 #import "VertifyCodeButtonVC.h"
 #import "LogoButtonVC.h"
+#import "TableItem.h"
 
 @interface UIButton_m ()
 
@@ -23,26 +24,10 @@
     
     self.title = @"UIButton";
     self.array = @[
-                   @"原生UIButton",
-                   @"倒计时按钮",
-                   @"图标两行字按钮"
+                   instanceItem(@"原生UIButton", nil, [UIButtonVC class]),
+                   instanceItem(@"倒计时按钮", nil, [VertifyCodeButtonVC class]),
+                   instanceItem(@"图标两行字按钮", nil, [LogoButtonVC class]),
                    ];
-}
-
-- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *index = self.array[indexPath.row];
-    
-    if ([index isEqualToString:@"原生UIButton"]) {
-        UIButtonVC *vc = [[UIButtonVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    } else if ([index isEqualToString:@"倒计时按钮"]) {
-        VertifyCodeButtonVC *vc = [[VertifyCodeButtonVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else if ([index isEqualToString:@"图标两行字按钮"]) {
-        LogoButtonVC *vc = [[LogoButtonVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "UIPasteboard_m.h"
 #import "UIPasteboardVC.h"
+#import "TableItem.h"
 
 @interface UIPasteboard_m ()
 
@@ -20,16 +21,8 @@
     
     self.title = @"UIPasteboard";
     self.array = @[
-                   @"原生UIPasteboard"
+                   instanceItem(@"原生UIPasteboard", nil, [UIPasteboardVC class]),
                    ];
-}
-
-- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *index = self.array[indexPath.row];
-    
-    if ([index isEqualToString:@"原生UIPasteboard"]) {
-        [self.navigationController pushViewController:[UIPasteboardVC new] animated:YES];
-    }
 }
 
 @end

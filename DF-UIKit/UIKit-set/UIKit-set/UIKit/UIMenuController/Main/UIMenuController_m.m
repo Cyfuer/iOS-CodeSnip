@@ -8,6 +8,7 @@
 
 #import "UIMenuController_m.h"
 #import "UImenuControllerVC.h"
+#import "TableItem.h"
 
 @interface UIMenuController_m ()
 
@@ -20,16 +21,9 @@
     
     self.title = @"UImenuController";
     self.array = @[
-                   @"原生UImenuController"
+                   instanceItem(@"原生UImenuController", nil, [UImenuControllerVC class]),
                    ];
 }
 
-- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *index = self.array[indexPath.row];
-    
-    if ([index isEqualToString:@"原生UImenuController"]) {
-        [self.navigationController pushViewController:[UImenuControllerVC new] animated:YES];
-    }
-}
 
 @end

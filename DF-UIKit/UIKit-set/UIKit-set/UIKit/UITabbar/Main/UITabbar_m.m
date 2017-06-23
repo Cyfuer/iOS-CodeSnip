@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "SysTabbarController.h"
+#import "TableItem.h"
 
 @interface UITabbar_m ()
 
@@ -22,16 +23,8 @@
     
     self.title = @"UITabbar";
     self.array = @[
-                   @"原生Tabbar的封装及Tabbar视图定制",
+                   instanceItem(@"原生Tabbar的封装及Tabbar视图定制", nil, [SysTabbarController class]),
                    ];
-}
-
-- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *index = self.array[indexPath.row];
-    
-    if ([index isEqualToString:@"原生Tabbar的封装及Tabbar视图定制"]) {
-        [self.navigationController pushViewController:[SysTabbarController new] animated:YES];
-    }
 }
 
 @end

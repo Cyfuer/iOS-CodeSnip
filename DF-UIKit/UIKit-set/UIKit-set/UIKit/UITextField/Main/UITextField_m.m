@@ -10,6 +10,7 @@
 
 #import "UITextfieldVC.h"
 #import "ImgTextFieldViewController.h"
+#import "TableItem.h"
 
 @interface UITextField_m ()
 
@@ -22,19 +23,11 @@
     
     self.title = @"UITextField";
     self.array = @[
-                   @"原生UITextField",
-                   @"ImgTextField"
+                   instanceItem(@"原生UITextField", nil, [UITextfieldVC class]),
+                   instanceItem(@"ImgTextField", nil, [ImgTextFieldViewController class]),
+                   @"",
+                   @""
                    ];
-}
-
-- (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *index = self.array[indexPath.row];
-    
-    if ([index isEqualToString:@"原生UITextField"]) {
-        [self.navigationController pushViewController:[UITextfieldVC new] animated:YES];
-    } else if ([index isEqualToString:@"ImgTextField"]) {
-        [self.navigationController pushViewController:[ImgTextFieldViewController new] animated:YES];
-    }
 }
 
 @end

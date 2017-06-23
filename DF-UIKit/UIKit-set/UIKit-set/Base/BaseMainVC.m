@@ -7,6 +7,8 @@
 //
 
 #import "BaseMainVC.h"
+#import "TableItemCell.h"
+#import "TableItem.h"
 
 @interface BaseMainVC () <UITableViewDataSource,UITableViewDelegate>
 
@@ -26,7 +28,10 @@
 
 #pragma mark - Private
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // 子类重写
+    TableItem *item = self.array[indexPath.row];
+    UIViewController *vc = [item.classObj new];
+    vc.title = item.title;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UITableViewDataSource && UITableViewDelegate
@@ -35,16 +40,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
+    TableItemCell *cell = [tableView dequeueReusableCellWithIdentifier:[TableItemCell description]];
     
     if (self.array.count > indexPath.row) {
-        NSString *title = self.array[indexPath.row];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld.%@",indexPath.row + 1,title];
+        TableItem *item = self.array[indexPath.row];
+        item.index = indexPath.row + 1;
+        cell.item = item;
     }
     
     return cell;
@@ -65,6 +67,9 @@
 - (UITableView *)table {
     if (!_table) {
         UITableView *table = [[UITableView alloc] initWithFrame:self.view.bounds];
+        [table registerNib:[UINib nibWithNibName:[TableItemCell description] bundle:[NSBundle mainBundle]] forCellReuseIdentifier:[TableItemCell description]];
+        table.estimatedRowHeight = 44;
+        table.rowHeight = 44;
         table.delegate = self;
         table.dataSource = self;
         

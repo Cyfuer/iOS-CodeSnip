@@ -10,6 +10,7 @@
 
 #import "SysNavigationController.h"
 #import "SysViewControlle.h"
+#import "TableItem.h"
 
 @interface UINavigationBar_m ()
 
@@ -22,8 +23,8 @@
     self.title = @"UITabbar";
     
     self.array = @[
-              @"原生UINavigationController的封装",
-              ];
+                   instanceItem(@"原生UINavigationController的封装", nil, [SysViewControlle class]),
+                   ];
 }
 
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
