@@ -50,6 +50,11 @@
 		EF336AA41EFCE36E00FCBD64 /* TableItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336AA21EFCE36E00FCBD64 /* TableItemCell.m */; };
 		EF336AA51EFCE36E00FCBD64 /* TableItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF336AA31EFCE36E00FCBD64 /* TableItemCell.xib */; };
 		EF336AAA1EFCF91600FCBD64 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336AA91EFCF91600FCBD64 /* UIView+Frame.m */; };
+		EF336AB21EFCFB2600FCBD64 /* UITabbarViewControllerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336AB11EFCFB2600FCBD64 /* UITabbarViewControllerVC.m */; };
+		EF336AB81EFCFD0200FCBD64 /* UICollectionView_m.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336AB71EFCFD0200FCBD64 /* UICollectionView_m.m */; };
+		EF336ABB1EFCFD1800FCBD64 /* UICollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336ABA1EFCFD1800FCBD64 /* UICollectionViewVC.m */; };
+		EF336ABF1EFCFD3B00FCBD64 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF336ABD1EFCFD3B00FCBD64 /* CollectionViewCell.m */; };
+		EF336AC01EFCFD3B00FCBD64 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF336ABE1EFCFD3B00FCBD64 /* CollectionViewCell.xib */; };
 		EFF6D0041E693A64005909B1 /* LogoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF6D0031E693A64005909B1 /* LogoButton.m */; };
 		EFF6D0081E693C96005909B1 /* LogoButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF6D0061E693C96005909B1 /* LogoButtonVC.m */; };
 		EFF6D0091E693C96005909B1 /* LogoButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFF6D0071E693C96005909B1 /* LogoButtonVC.xib */; };
@@ -153,6 +158,15 @@
 		EF336AA31EFCE36E00FCBD64 /* TableItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableItemCell.xib; sourceTree = "<group>"; };
 		EF336AA81EFCF91600FCBD64 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		EF336AA91EFCF91600FCBD64 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		EF336AB01EFCFB2600FCBD64 /* UITabbarViewControllerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabbarViewControllerVC.h; sourceTree = "<group>"; };
+		EF336AB11EFCFB2600FCBD64 /* UITabbarViewControllerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabbarViewControllerVC.m; sourceTree = "<group>"; };
+		EF336AB61EFCFD0200FCBD64 /* UICollectionView_m.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionView_m.h; sourceTree = "<group>"; };
+		EF336AB71EFCFD0200FCBD64 /* UICollectionView_m.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionView_m.m; sourceTree = "<group>"; };
+		EF336AB91EFCFD1800FCBD64 /* UICollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewVC.h; sourceTree = "<group>"; };
+		EF336ABA1EFCFD1800FCBD64 /* UICollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewVC.m; sourceTree = "<group>"; };
+		EF336ABC1EFCFD3B00FCBD64 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		EF336ABD1EFCFD3B00FCBD64 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		EF336ABE1EFCFD3B00FCBD64 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		EFF6D0021E693A64005909B1 /* LogoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoButton.h; sourceTree = "<group>"; };
 		EFF6D0031E693A64005909B1 /* LogoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoButton.m; sourceTree = "<group>"; };
 		EFF6D0051E693C96005909B1 /* LogoButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoButtonVC.h; sourceTree = "<group>"; };
@@ -322,6 +336,7 @@
 		D58262321D07EF390030420D /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				EF336AB31EFCFCC300FCBD64 /* UICollectionView */,
 				EF336A8B1EFCDB1D00FCBD64 /* UIViewController */,
 				1824458D1D387B6000DFF32F /* UIButton */,
 				D5A3842F1D224D9E004CCCE9 /* UIPasteboard */,
@@ -497,6 +512,7 @@
 				EF336A8C1EFCDB1D00FCBD64 /* Main */,
 				EF336A8D1EFCDB1D00FCBD64 /* UIViewController */,
 				EF336A961EFCDC7C00FCBD64 /* TabViewController */,
+				EF336AAF1EFCFB1400FCBD64 /* UITabbarViewController */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -558,6 +574,45 @@
 				EF336AA91EFCF91600FCBD64 /* UIView+Frame.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		EF336AAF1EFCFB1400FCBD64 /* UITabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF336AB01EFCFB2600FCBD64 /* UITabbarViewControllerVC.h */,
+				EF336AB11EFCFB2600FCBD64 /* UITabbarViewControllerVC.m */,
+			);
+			path = UITabbarViewController;
+			sourceTree = "<group>";
+		};
+		EF336AB31EFCFCC300FCBD64 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EF336AB41EFCFCC300FCBD64 /* Main */,
+				EF336AB51EFCFCDF00FCBD64 /* UICollectionView */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		EF336AB41EFCFCC300FCBD64 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EF336AB61EFCFD0200FCBD64 /* UICollectionView_m.h */,
+				EF336AB71EFCFD0200FCBD64 /* UICollectionView_m.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF336AB51EFCFCDF00FCBD64 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EF336AB91EFCFD1800FCBD64 /* UICollectionViewVC.h */,
+				EF336ABA1EFCFD1800FCBD64 /* UICollectionViewVC.m */,
+				EF336ABC1EFCFD3B00FCBD64 /* CollectionViewCell.h */,
+				EF336ABD1EFCFD3B00FCBD64 /* CollectionViewCell.m */,
+				EF336ABE1EFCFD3B00FCBD64 /* CollectionViewCell.xib */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		EFF6D0001E691A62005909B1 /* LogoButton */ = {
@@ -686,6 +741,7 @@
 			files = (
 				182445971D387FF000DFF32F /* UIButtonVC.xib in Resources */,
 				D582620D1D07ED200030420D /* LaunchScreen.storyboard in Resources */,
+				EF336AC01EFCFD3B00FCBD64 /* CollectionViewCell.xib in Resources */,
 				18B3507D1D8FD0E800BBD052 /* pwd@2x.png in Resources */,
 				18B3507B1D8FD0E800BBD052 /* code@2x.png in Resources */,
 				EF336A951EFCDBB600FCBD64 /* UIViewControllerVC.xib in Resources */,
@@ -724,6 +780,7 @@
 				18B3506E1D8FCA8B00BBD052 /* ImgTextField.m in Sources */,
 				D5A383591D13F67A004CCCE9 /* BaseMainVC.m in Sources */,
 				D582623E1D07F1350030420D /* SysTabbarViewController.m in Sources */,
+				EF336ABF1EFCFD3B00FCBD64 /* CollectionViewCell.m in Sources */,
 				182445921D387F5F00DFF32F /* UIButton_m.m in Sources */,
 				D58262021D07ED200030420D /* AppDelegate.m in Sources */,
 				EFF6D0041E693A64005909B1 /* LogoButton.m in Sources */,
@@ -740,7 +797,9 @@
 				D5A3842E1D223FB5004CCCE9 /* UImenuControllerVC.m in Sources */,
 				D5A383561D13EE54004CCCE9 /* UITextField_m.m in Sources */,
 				D5A384371D224E09004CCCE9 /* UIPasteboardVC.m in Sources */,
+				EF336AB21EFCFB2600FCBD64 /* UITabbarViewControllerVC.m in Sources */,
 				D58262611D0D61BF0030420D /* SysViewControlle.m in Sources */,
+				EF336AB81EFCFD0200FCBD64 /* UICollectionView_m.m in Sources */,
 				EF336AA41EFCE36E00FCBD64 /* TableItemCell.m in Sources */,
 				D5A3835C1D13FA04004CCCE9 /* UITextfieldVC.m in Sources */,
 				EF336A901EFCDB5600FCBD64 /* UIViewController_m.m in Sources */,
@@ -749,6 +808,7 @@
 				D58261FF1D07ED200030420D /* main.m in Sources */,
 				D582623A1D07F0A20030420D /* BaseVC.m in Sources */,
 				EF336A941EFCDBB600FCBD64 /* UIViewControllerVC.m in Sources */,
+				EF336ABB1EFCFD1800FCBD64 /* UICollectionViewVC.m in Sources */,
 				EF336AA01EFCE0BC00FCBD64 /* TableItem.m in Sources */,
 				182445961D387FF000DFF32F /* UIButtonVC.m in Sources */,
 				D5A3842B1D223F73004CCCE9 /* UIMenuController_m.m in Sources */,

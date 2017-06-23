@@ -15,6 +15,7 @@
 #import "UIPasteboard_m.h"
 #import "UIButton_m.h"
 #import "UIViewController_m.h"
+#import "UICollectionView_m.h"
 
 
 
@@ -36,6 +37,7 @@
                    instanceItem(@"UIPasteboard", @"黏贴板", [UITabbar_m class]),
                    instanceItem(@"UIButton", @"按钮", [UITabbar_m class]),
                    instanceItem(@"UIViewController", @"控制器", [UIViewController_m class]),
+                   instanceItem(@"UICollectionView", @"瀑布流", [UICollectionView_m class]),
                    ];
 }
 

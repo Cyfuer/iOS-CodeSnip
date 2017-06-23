@@ -7,9 +7,10 @@
 //
 
 #import "UIViewController_m.h"
+#import "TableItem.h"
 #import "UIViewControllerVC.h"
 #import "TabViewControllerVC.h"
-#import "TableItem.h"
+#import "UITabbarViewControllerVC.h"
 
 @interface UIViewController_m ()
 
@@ -24,6 +25,7 @@
     self.array = @[
                    instanceItem(@"原生UIViewController", nil, [UIViewControllerVC class]),
                    instanceItem(@"选项卡控制器", nil, [TabViewControllerVC class]),
+                   instanceItem(@"原生UITabbarViewController", nil, [UITabbarViewControllerVC class]),
                    ];
 }
 
